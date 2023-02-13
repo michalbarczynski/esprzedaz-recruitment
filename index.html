@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Zadanie rekrutacyjne</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="contact">
+            <h1>Formularz kontaktowy</h1>
+            <form action="#">
+                <div class="dbl-field">
+                    <div class="col">
+                        <div class="field long">
+                            <input type="text" placeholder="Imię">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="field long">
+                            <input type="text" placeholder="Nazwisko">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="field long">
+                            <input type="text" placeholder="Ulica">
+                        </div>
+                        <div class="field medium">
+                            <input type="text" placeholder="Nr domu">
+                        </div>
+                        <div class="field medium">
+                            <input type="text" placeholder="Nr lokalu">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="field short">
+                            <input type="text" id="zip-code" placeholder="Kod pocztowy">
+                        </div>
+                        <div class="field medium">
+                            <input type="text" placeholder="Miasto">
+                        </div>
+                    </div>
+                        
+                    <div class="col">
+                        <div class="field long">
+                            <select name="country" id="country" class="long">
+                                <option>Kraj</option>
+                                <option value="Poland">Polska</option>
+                                <option value="Afghanistan">Afganistan</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                            </select>
+                        </div>
+                    </div>       
+                </div>         
+                <div class="button-area">
+                    <button class="btn-send">Wyślij</button>
+                </div>
+            </form>
+        </section>
+        <section class="product">
+            <h1>Produkty</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper" navigation="true">
+                    <!-- SLAJD -->
+                    <div class="swiper-slide">
+                        <div class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <span class="discount"><s>9999,99 zł</s></span>
+                            <span class="price">9999,99 zł</span>
+                            <span class="product-short-desc">Nazwa produktu test widoczności w drugiej linii...</span>
+                        </div>
+                        <button class="card-btn">Dodaj do koszyka</button>
+                    </div>
+                    <!-- SLAJD -->
+                    <div class="swiper-slide">
+                        <div class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <span class="discount"><s>9999,99 zł</s></span>
+                            <span class="price">9999,99 zł</span>
+                            <span class="product-short-desc">Nazwa produktu test widoczności w drugiej linii...</span>
+                        </div>
+                        <button class="card-btn">Dodaj do koszyka</button>
+                    </div>
+                    <!-- SLAJD -->
+                    <div class="swiper-slide">
+                        <div class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <span class="discount"><s>9999,99 zł</s></span>
+                            <span class="price">9999,99 zł</span>
+                            <span class="product-short-desc">Nazwa produktu test widoczności w drugiej linii...</span>
+                        </div>
+                        <button class="card-btn">Dodaj do koszyka</button>
+                    </div>
+                    <!-- SLAJD -->
+                    <div class="swiper-slide">
+                        <div class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <span class="discount"><s>9999,99 zł</s></span>
+                            <span class="price">9999,99 zł</span>
+                            <span class="product-short-desc">Nazwa produktu test widoczności w drugiej linii...</span>
+                        </div>
+                        <button class="card-btn">Dodaj do koszyka</button>
+                    </div>
+                    <!-- SLAJD -->
+                    <div class="swiper-slide">
+                        <div class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <span class="discount"><s>9999,99 zł</s></span>
+                            <span class="price">9999,99 zł</span>
+                            <span class="product-short-desc">Nazwa produktu test widoczności w drugiej linii...</span>
+                        </div>
+                        <button class="card-btn">Dodaj do koszyka</button>
+                    </div>
+                    <!-- SLAJD -->
+                    <div class="swiper-slide">
+                        <div class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <span class="discount"><s>9999,99 zł</s></span>
+                            <span class="price">9999,99 zł</span>
+                            <span class="product-short-desc">Nazwa produktu test widoczności w drugiej linii...</span>
+                        </div>
+                        <button class="card-btn">Dodaj do koszyka</button>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
