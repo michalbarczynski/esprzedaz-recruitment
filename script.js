@@ -59,7 +59,7 @@ input.addEventListener('keydown', keydownHandler);
 input.addEventListener('input', inputHandler);
 input.addEventListener('change', isZipValid);
 
-// Fetching form inputs and sending to URL
+// Fetching form input values and sending to URL
 const form = document.querySelector('#contact-form');
 
 form.addEventListener("submit", e => {

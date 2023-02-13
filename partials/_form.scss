@@ -1,0 +1,93 @@
+.wrapper {
+    width: 1920px;
+    top: 0px;
+    background: $main-color-white;
+    padding: 0 290px;
+}
+
+.wrapper h1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: $font-size-header;
+    line-height: 48px;
+    color: $font-color-main;
+}
+
+.wrapper form {
+    margin: 40px 0px 128px;
+}
+
+form .col {
+    width: 33.3%;
+    display: flex;
+    flex-basis: 10;
+}
+
+form .dbl-field {
+    max-width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.dbl-field .field {
+    box-sizing: border-box;
+    height: 48px;
+    margin: 10px 10px;
+}
+
+.dbl-field .long {
+    flex: 4;
+}
+
+.dbl-field .medium {
+    flex: 2;
+    margin-left: 2px;
+}
+
+.dbl-field .short {
+    flex: 1;
+}
+
+form .field input, form .field select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 16px;
+    border: 1px solid $border-input;
+    border-radius: $main-radius;
+    color: $font-color-main;
+}
+
+form .field input:focus, form .field select:focus {
+    border: 2px groove $btn-color-black;
+}
+
+form .field input::placeholder {
+    color: $font-color-main;
+}
+
+.button-area {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-send {
+    gap: 10px;
+    position: absolute;
+    width: 70px;
+    height: 48px;
+    background: $btn-color-ocean;
+    border-radius: $main-radius;
+    font-weight: $font-weight-bold;
+    border: none $main-radius;
+    color: $main-color-white;
+}
+
+.btn-send:hover {
+    background: #03786c;
+    cursor: pointer;
+}
