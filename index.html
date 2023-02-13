@@ -13,41 +13,41 @@
     <div class="wrapper">
         <section class="contact">
             <h1>Formularz kontaktowy</h1>
-            <form action="#">
+            <form id="contact-form" action="https://formsubmit.io/send" method="POST">
                 <div class="dbl-field">
                     <div class="col">
                         <div class="field long">
-                            <input type="text" placeholder="Imię">
+                            <input name="first-name" type="text" placeholder="Imię" required>
                         </div>
                     </div>
                     <div class="col">
                         <div class="field long">
-                            <input type="text" placeholder="Nazwisko">
+                            <input name="last-name" type="text" placeholder="Nazwisko" required>
                         </div>
                     </div>
                     <div class="col">
                         <div class="field long">
-                            <input type="text" placeholder="Ulica">
+                            <input name="street" type="text" placeholder="Ulica" required>
                         </div>
                         <div class="field medium">
-                            <input type="text" placeholder="Nr domu">
+                            <input name="house-number" type="text" placeholder="Nr domu" required>
                         </div>
                         <div class="field medium">
-                            <input type="text" placeholder="Nr lokalu">
+                            <input name="local-number" type="text" placeholder="Nr lokalu" required>
                         </div>
                     </div>
                     <div class="col">
                         <div class="field short">
-                            <input type="text" id="zip-code" placeholder="Kod pocztowy">
+                            <input name="zip-code" type="text" id="zip-code" placeholder="Kod pocztowy" required>
                         </div>
                         <div class="field medium">
-                            <input type="text" placeholder="Miasto">
+                            <input name="city" type="text" placeholder="Miasto" required>
                         </div>
                     </div>
-                        
+
                     <div class="col">
                         <div class="field long">
-                            <select name="country" id="country" class="long">
+                            <select name="country" id="country" class="long" required>
                                 <option>Kraj</option>
                                 <option value="Poland">Polska</option>
                                 <option value="Afghanistan">Afganistan</option>
@@ -57,10 +57,10 @@
                                 <option value="Angola">Angola</option>
                             </select>
                         </div>
-                    </div>       
-                </div>         
+                    </div>
+                </div>
                 <div class="button-area">
-                    <button class="btn-send">Wyślij</button>
+                    <button type="submit" class="btn-send">Wyślij</button>
                 </div>
             </form>
         </section>
